@@ -3,12 +3,10 @@ package classes;
 public abstract class User {
     protected String name;
     protected String lastName;
-    protected String fiscalCode;
 
-    public User(String name, String lastName, String fiscalCode) {
+    public User(String name, String lastName) {
         this.name = name;
         this.lastName = lastName;
-        this.fiscalCode = fiscalCode;
     }
 
     public String getName() {
@@ -19,10 +17,7 @@ public abstract class User {
         return lastName;
     }
 
-    public String getFiscalCode() {
-        return fiscalCode;
-    }
 
-    public abstract String getUserInfo();
+    public abstract String getInfo();
 
 }

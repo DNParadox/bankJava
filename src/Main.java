@@ -12,19 +12,13 @@ public class Main {
         bank.addCustomer(customer2);
 
 
-        for (Customer customer : bank.customers) {
-            System.out.println(" Client of the bank: " + customer.getName() + " " + customer.getLastName());
-        }
-
-        bank.removeCustomer(customer1);
-
-        for (Customer customer : bank.customers) {
-            System.out.println(" Client of the bank: " + customer.getName() + " " + customer.getLastName());
-        }
-
 
         Customer foundCustomer =  bank.searchCustomerbyFiscalCode("PPRPP");
-        System.out.println(foundCustomer.getName());
+        if(foundCustomer == null){
+            System.out.println("Retry?");
+        }else{
+            System.out.println(foundCustomer.getInfo());
+        }
 
 
     }
