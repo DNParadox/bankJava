@@ -17,11 +17,11 @@ public class Customer  extends User{
         this.salary = salary;
     }
 
-//
-//    @Override
-//    public String getUserInfo() {
-//        return "";
-//    }
+
+    @Override
+    public String getUserInfo() {
+        return "";
+    }
 
     public String getCustomerInfo() {
         return "Name: " + name + "\n" +
